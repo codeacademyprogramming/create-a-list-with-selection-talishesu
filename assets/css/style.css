@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.sidebar {
+    /* width: 200px; */
+    width: 0px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    padding-top: 40px;
+    /* position: absolute;
+    top: 0;
+    left: -200px;
+    transition: left .3s ease-in; */
+    transition: width .3s ease-in;
+    position: relative;
+}
+
+div.sidebar img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+div.sidebar.open {
+    left: 0;
+    /* width: 200px; */
+}
+
+div.sidebar ul {
+    list-style-type: none;
+}
+
+div.sidebar ul li a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    margin: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-right: 30px;
+}
+
+.input-wrapper .eye-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: gray;
+}
